@@ -116,20 +116,4 @@ public class IntList {
 		
 		return null;
 	}
-	
-	public static void main(String[] args){
-		
-		IntNode node = new IntNode(7);
-		
-		
-		IntList list = new IntList();
-		list.addToEnd(node);
-		IntNode temp = list.head;
-		System.out.println(list.head.getValue());
-		System.out.println(temp.getValue());
-		temp.setValue(4);
-		System.out.println(list.head.getValue());
-		
-		
-	}
 }
