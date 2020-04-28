@@ -51,16 +51,17 @@ public class BigNumber {
 	 */
 	public BigNumber(BigNumber other) {
 			
-     if(other!=null && this!=null){
-		this.head = new IntNode(other.head.getValue());
-		this.number = new IntList(this.head);
-		IntNode curr = other.head.getNext();
-		while (curr != null) {
+             if(other!=null && this!=null){
+		 this.head = new IntNode(other.head.getValue());
+		 this.number = new IntList(this.head);
+		 IntNode curr = other.head.getNext();
+		  
+		 while (curr != null) {
 			IntNode toAdd = new IntNode(curr.getValue());
 			this.number.addToEnd(toAdd);
 			curr = curr.getNext();
-		}
-	  } 
+		 }
+	     } 
 	}
 	
 
